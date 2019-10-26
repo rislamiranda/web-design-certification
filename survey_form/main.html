@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="survey-visual.css" media="screen">
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Application for Cat Lovers Organisation</p>
+    <form id="survey-form">
+        <p><label id="name-label">* Name: <input id="name" type="text" placeholder="Enter your name" 
+            required></label></p>
+        <p><label id="email-label">* Email: <input id="email" type="email" placeholder="Enter your Email"
+             required></label></p>
+        <p><label id="number-label">Phone Number: <input id="number" type="number" pattern="[0-9]" 
+            min="9" max="10" placeholder="Number"></label></p>
+        <p><label>How many cats consider you as their human? <select id="dropdown">
+            <option value="1">1</option>  
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4+</option>      
+        </select></label></p>
+        <p><label>Do you consider yourself a crazy-cat person? 
+            <label><input type="radio" name="crazy-cat" value="1">Defitinely</label>
+            <label><input type="radio" name="crazy-cat" value="2">For sure</label>
+            <label><input type="radio" name="crazy-cat" value="3">Hell yes</label>
+        </label></p>
+        <p><label>How cute do you think cats are? 
+            <label><input type="checkbox" value="1">Very</label>
+            <label><input type="checkbox" value="2">So much that I'm gonna die</label>
+            <label><input type="checkbox" value="3">I can't stop kissing the cat</label>
+            <label><input type="checkbox" value="4">YES</label>
+        </label></p>
+        <p><label>Any comments?
+            <textarea id="comments" type="text" placeholder="Enter your comments"></textarea>
+        </label></p>
+        <p><button id="submit" type="submit">Submit</button></p>
+    </form>        
+    
+</body>

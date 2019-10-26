@@ -1,0 +1,10 @@
+h1 {
+    color: #6162FF;
+    margin: 0 auto;
+}
+
+.smaller-image {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
